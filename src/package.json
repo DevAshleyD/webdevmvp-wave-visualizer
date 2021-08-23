@@ -11,7 +11,7 @@
         "server": "npx http-server ./ -o ./test/index.html -c-1",
         "build": "npx rollup -c",
         "watch": "npx watch \"npm run build\" ./src",
-        "start": "concurrently \"npm run watch\" \"npm run build\" \"npm run server\""
+        "start": "concurrently \"npm run-script watch\" \"npm run-script build\" \"npm run-script server\""
     },
     "keywords": [
         "audio",

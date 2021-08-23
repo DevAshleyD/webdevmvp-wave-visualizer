@@ -2,7 +2,7 @@
     "name": "@foobar404/wave",
     "version": "1.2.6",
     "description": "Audio visualizer library for javascript (20+ designs).",
-    "main": "dist/bundle.cjs.js",
+    "main": "test/bundle.cjs.js",
     "directories": {
         "test": "test"
     },
@@ -11,7 +11,7 @@
         "server": "npx http-server ./ -o ./test/index.html -c-1",
         "build": "npx rollup -c",
         "watch": "npx watch \"npm run build\" ./src",
-        "start": "concurrently \"npm run-scripts watch\" \"npm run-scripts build\" \"npm run-scripts server\""
+        "prod": "concurrently \"npm run-script server\" \"npm run-script build\" \"npm run-script watch\""
     },
     "keywords": [
         "audio",
